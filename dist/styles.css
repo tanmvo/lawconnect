@@ -369,6 +369,27 @@ img {
     margin-left: auto;
     margin-right: auto; }
 
+.btn {
+  margin-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  border: 1px solid #D2D5D9;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.15; }
+  .btn--primary {
+    border-color: #0E5FE3;
+    background-color: #0E5FE3;
+    color: #fff; }
+  .btn--secondary {
+    border-color: #6D7278;
+    background-color: #fff;
+    color: #6D7278; }
+  .btn--no-spacer {
+    margin-right: 0; }
+
 .app {
   height: 100vh;
   display: flex;
@@ -508,5 +529,20 @@ img {
       padding-bottom: 2.5rem;
       padding-left: 1.5rem;
       background-color: transparent; } }
+
+.section {
+  padding-right: 1rem;
+  padding-left: 1rem; }
+  .section__header {
+    padding-top: 17px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #D2D5D9; }
+  .section__title {
+    font-size: 0.875rem;
+    line-height: 1.5; }
+  @media (min-width: 576px) {
+    .section {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,27 @@
+.btn {
+    margin-right:   $spacer-8;
+    padding-top:    $spacer-8;
+    padding-right:  $spacer-24;
+    padding-bottom: $spacer-8;
+    padding-left:   $spacer-24;
+    border:         1px solid $border-color;
+    border-radius:  $border-radius;
+    font-size:      $font-size-sm;
+    line-height:    $line-height-sm;
+
+    &--primary {
+        border-color:       $primary;
+        background-color:   $primary;
+        color:              $white;
+    }
+
+    &--secondary {
+        border-color:       $gray-400;
+        background-color:   $white;
+        color:              $gray-400;
+    }
+
+    &--no-spacer {
+        margin-right:       $spacer-0;
+    }
+}
