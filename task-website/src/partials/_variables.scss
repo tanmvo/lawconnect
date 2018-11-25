@@ -1,0 +1,133 @@
+// Color system
+
+$white:         #fff !default;
+$black:         #191919 !default;
+
+$gray-100:      #F5F5F5 !default;
+$gray-200:      #D2D5D9 !default;
+$gray-300:      #979797 !default;    
+$gray-400:      #6D7278 !default;
+$gray-500:      #303030 !default;
+
+$blue-100:      #E8F0FC !default;
+$blue-200:      #0E5FE3 !default;
+$purple:        #5D4ABD !default;
+
+$primary:       $blue-200 !default;
+$secondary:     $gray-500 !default;
+
+
+// Spacing
+
+
+$spacer-0:   0 !default;
+$spacer-8:      (1rem / 2) !default;
+$spacer-16:     1rem !default; 
+$spacer-24:     1.5rem !default;
+$spacer-40:     2.5rem !default;
+$spacer-48:     3rem !default;
+
+
+// Body
+
+$body-bg-primary:           $white !default;
+$body-bg-secondary:         $gray-100 !default;
+
+
+// Links
+
+
+$link-color:                              $primary !default;
+$link-decoration:                         none !default;
+$link-hover-color:                        darken($link-color, 15%) !default;
+$link-hover-decoration:                   none !default;
+
+
+// Paragraphs
+
+
+$paragraph-margin-bottom:   1rem !default;
+
+
+// Grid breakpoints
+
+
+$grid-breakpoints: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grid-breakpoints: map-merge(
+  (
+    sm: 0,
+    lg: 576px,
+  ),
+  $grid-breakpoints
+);
+
+
+// Components
+
+
+$border-width:                1px !default;
+$border-color:                $gray-200 !default;
+
+$border-radius:               .25rem !default;
+$border-radius-lg:            .5rem !default;
+
+$box-shadow:                  0 0 .25rem rgba($black, .2) !default;
+
+// Fonts
+
+$font-family-sans-serif:      "Open Sans", Arial, sans-serif !default;
+$font-color:                  $black !default;
+$font-color-muted:            $gray-400 !default;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                ($font-size-base * .875) !default;
+
+$font-weight-normal:          400 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+$line-height-sm:              1.15 !default;
+
+$h1-font-size:                $font-size-base * 1.25 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$headings-margin-bottom:      $spacer-16 !default;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        400 !default;
+$headings-line-height:        1 !default;
+$headings-color:              inherit !default;
+
+$hr-border-color:             $gray-200 !default;
+$hr-border-width:             $border-width !default;
+
+// Logo
+
+$logo-width:      100% !default;
+$logo-max-width:  11.25rem !default;
+
+// Sidebar
+
+$sidebar-width-sm:      270px !default;
+$sidebar-width-lg:      240px !default;
+
+$sidebar-flex-shrink:   0 !default;
+$sidebar-flex-grow:     0 !default;
+$sidebar-flex-sm:       $sidebar-flex-grow $sidebar-flex-shrink $sidebar-width-sm !default;
+$sidebar-flex-lg:       $sidebar-flex-grow $sidebar-flex-shrink $sidebar-width-lg !default;
+
+$sidebar-height:        100vh !default;
+
+// App
+
+$app-height: 100vh;
+$app-sidebar-close: ($sidebar-width-sm * -1) !default;
+
+// Main
+
+$main-height: 100% !default;
+

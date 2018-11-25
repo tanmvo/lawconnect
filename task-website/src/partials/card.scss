@@ -1,0 +1,28 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 128px;
+    padding-top: $spacer-16;
+    padding-right: $spacer-16;
+    padding-bottom: 0.75rem;
+    padding-left: $spacer-16;
+    background-color: $body-bg-primary;
+    border-radius: $border-radius-lg;
+    box-shadow: $box-shadow;
+    line-height: $line-height-base;
+
+    &__description {
+        align-items: flex-start;
+        flex: 1 100%;
+    }
+
+    &__date {
+        align-items: flex-end;
+        align-self: flex-end;
+        flex: 1 100%;
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
+        color: $font-color-muted;
+    }
+}

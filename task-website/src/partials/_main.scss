@@ -1,0 +1,13 @@
+$main-margin-left: $sidebar-width-lg;
+$main-position-sidebar-close: 0px;
+$main-position-sidebar-open: $sidebar-width-sm;
+
+.main {
+    width: 100%;
+    height:             $main-height;
+    overflow-y:         scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color:   $body-bg-secondary;
+    transition:         transform 0.2s linear;
+    position: relative;
+}

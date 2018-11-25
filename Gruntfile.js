@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 		        layout: 'default.hbs',
 		    },
 	      	index: {
-	      		files: {'dist/': ['src/index.hbs']},
+	      		files: {'task-website/dist/': ['src/index.hbs']},
 	      		options: {
 	      			partials: 'src/templates/partials/*.hbs',
 	      		}
@@ -40,21 +40,49 @@ module.exports = function(grunt) {
 				expand: true,
 					cwd: 'src/js/',
 					src: '*.js',
-					dest: 'dist/',
+					dest: 'task-website/dist/',
+					flatten: true,
+			},
+			jsSrc: {
+				expand: true,
+					cwd: 'src/js/',
+					src: '*.js',
+					dest: 'task-website/src/',
 					flatten: true,
 			},
 			img: {
 				expand: true,
 					cwd: 'src/img/',
 					src: ['**/*'],
-					dest: 'dist/images/',
+					dest: 'task-website/dist/images/',
+					flatten: false,
+			},
+			imgSrc: {
+				expand: true,
+					cwd: 'src/img/',
+					src: ['**/*'],
+					dest: 'task-website/src/images/',
+					flatten: false,
+			},
+			htmlSrc: {
+				expand: true,
+					cwd: 'task-website/dist/',
+					src: ['index.html'],
+					dest: 'task-website/src/',
+					flatten: false,
+			},
+			sass: {
+				expand: true,
+					cwd: 'src/sass/',
+					src: ['**/*'],
+					dest: 'task-website/src/',
 					flatten: false,
 			}
 		},
 		sass: {
             dist: {
                 files: {
-                    'dist/styles.css': 'src/sass/styles.scss'
+                    'task-website/dist/styles.css': 'src/sass/styles.scss'
                 }
             }
         },

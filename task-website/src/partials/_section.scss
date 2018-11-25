@@ -1,0 +1,23 @@
+.section {
+    margin-bottom: $spacer-16;
+    padding-right: $spacer-16;
+    padding-left: $spacer-16;
+    
+    &__header {
+        padding-top: 17px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid $border-color;
+    }
+    
+    &__title {
+        font-size:      $font-size-sm;
+        line-height:    $line-height-base;
+        color:          $font-color-muted;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        margin-bottom: $spacer-24;
+        padding-right: $spacer-24;
+        padding-left: $spacer-24;
+    }
+}

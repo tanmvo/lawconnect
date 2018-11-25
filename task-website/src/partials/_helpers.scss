@@ -1,0 +1,24 @@
+// Prevent users from scrolling
+.overflow-none {
+    overflow: hidden !important;
+}
+
+.visible-sm {
+    display: block;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        display: none !important;
+    }
+}
+
+.visible-lg {
+    display: none;
+    
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        display: block !important;
+    }
+}
+
+.hidden {
+    visibility: hidden !important;
+}
