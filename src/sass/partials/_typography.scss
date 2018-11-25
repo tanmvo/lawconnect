@@ -1,0 +1,12 @@
+body {
+    font-family:    $font-family-sans-serif;
+    line-height:    $line-height-base;
+    color:          $font-color;
+}
+
+h1 { 
+    font-size: $h1-font-size;
+    font-weight: normal; 
+}
+
+p { font-size: $font-size-base; }

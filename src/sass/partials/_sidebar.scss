@@ -1,7 +1,10 @@
 .sidebar {
     width: $sidebar-width-sm;
     height: $sidebar-height;
-    padding: $spacer-24;
+    padding-top:        $spacer-24;
+    padding-right:      $spacer-24;
+    padding-bottom:     $spacer-24;
+    padding-left:       $spacer-24;
     background-color: $body-bg-primary;
     position: fixed;
     left: -($sidebar-width-sm);

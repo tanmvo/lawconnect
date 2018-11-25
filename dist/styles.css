@@ -308,10 +308,25 @@ template {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  color: #191919; }
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: normal; }
+
+p {
+  font-size: 1rem; }
+
 .sidebar {
   width: 270px;
   height: 100vh;
-  padding: 1.5rem;
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
   background-color: #fff;
   position: fixed;
   left: -270px;
@@ -324,15 +339,19 @@ template {
       left: 0; } }
 
 .main {
+  width: 100%;
   height: 100%;
   margin-left: 0;
-  padding: 1.5rem;
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
   position: absolute;
   top: 0;
   left: 0px;
   overflow-y: scroll;
-  transition: transform 0.2s linear;
-  background-color: #F5F5F5; }
+  background-color: #F5F5F5;
+  transition: transform 0.2s linear; }
   .show-sidebar .main {
     transform: translateX(270px); }
   @media (min-width: 576px) {
