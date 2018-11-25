@@ -4,14 +4,20 @@ var app = {
 		app.resetSidebar();
 	},
 	
-	// Sidebar
 	menuIcon: $('.menu-icon'),
 	appContainer: $('.app'),
 	body: $('body'),
+	mask: $('.mask'),
+	main: $('.main'),
+
+	// Sidebar
+	
 	toggleSidebar: function() {
 		app.menuIcon.on('click', function() {
 			app.appContainer.toggleClass('app--sidebar-open');
 			app.body.toggleClass('overflow-none');
+			app.main.toggleClass('overflow-none');
+			app.activateMask();
 		});
 	},
 	resetSidebar: function() {
@@ -21,8 +27,15 @@ var app = {
 			if ($(window).width() > 575 && app.appContainer.hasClass('app--sidebar-open')) {
 				app.appContainer.removeClass('app--sidebar-open');
 				app.body.removeClass('overflow-none');
+				app.deactivateMask();
 			}
 		});
+	},
+	activateMask: function () {
+		app.mask.toggleClass('mask--active');
+	},
+	deactivateMask: function () {
+		app.mask.removeClass('mask--active');
 	}
 }
 
