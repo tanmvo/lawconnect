@@ -696,7 +696,8 @@ img {
     align-items: flex-start;
     flex: 1 100%; }
   .card__date {
-    align-items: flex-start;
+    align-items: flex-end;
+    align-self: flex-end;
     flex: 1 100%;
     font-size: 0.875rem;
     line-height: 1.15;

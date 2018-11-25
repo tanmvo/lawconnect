@@ -18,7 +18,8 @@
     }
 
     &__date {
-        align-items: flex-start;
+        align-items: flex-end;
+        align-self: flex-end;
         flex: 1 100%;
         font-size: $font-size-sm;
         line-height: $line-height-sm;
