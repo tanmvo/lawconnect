@@ -1,0 +1,15 @@
+.app {
+    height: $app-height;
+    display: flex;
+    position: absolute;
+    left: $app-sidebar-close;
+    transition: transform .2s linear;
+
+    &--sidebar-open {
+        transform: translateX($sidebar-width-sm);
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        left: 0;
+    }
+}

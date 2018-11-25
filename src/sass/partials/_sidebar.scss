@@ -1,21 +1,15 @@
 .sidebar {
-    width: $sidebar-width-sm;
+    flex: $sidebar-flex-sm;
     height: $sidebar-height;
     padding-top:        $spacer-24;
     padding-right:      $spacer-24;
     padding-bottom:     $spacer-24;
     padding-left:       $spacer-24;
     background-color: $body-bg-primary;
-    position: fixed;
     left: -($sidebar-width-sm);
     transition: transform 0.2s linear;
-    
-    .show-sidebar & {
-        transform: translateX($sidebar-width-sm);
-    }
 
     @media (min-width: map-get($grid-breakpoints, lg)) {
-        width: $sidebar-width-lg;
-        left: 0;
+        flex: $sidebar-flex-lg;
     }
 }

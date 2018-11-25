@@ -134,20 +134,17 @@ $hr-border-width:             $border-width !default;
 $sidebar-width-sm:      270px !default;
 $sidebar-width-lg:      240px !default;
 
-$sidebar-flex-sm:       0 0 $sidebar-width-sm !default;
-$sidebar-flex-lg:       0 0 $sidebar-width-lg !default;
+$sidebar-flex-shrink:   0 !default;
+$sidebar-flex-grow:     0 !default;
+$sidebar-flex-sm:       $sidebar-flex-grow $sidebar-flex-shrink $sidebar-width-sm !default;
+$sidebar-flex-lg:       $sidebar-flex-grow $sidebar-flex-shrink $sidebar-width-lg !default;
 
 $sidebar-height:        100vh !default;
-
-$sidebar-position-menu-close: ($sidebar-width-sm * -1) !default;
-$sidebar-position-menu-open: 0 !default;
 
 // App
 
 $app-height: 100vh;
-$sidebar-position-menu-close: -($sidebar-width-sm) !default;
-$sidebar-position-menu-open: 0 !default;
-
+$app-sidebar-close: ($sidebar-width-sm * -1) !default;
 
 // Main
 

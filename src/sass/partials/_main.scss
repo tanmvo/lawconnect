@@ -3,25 +3,14 @@ $main-position-sidebar-close: 0px;
 $main-position-sidebar-open: $sidebar-width-sm;
 
 .main {
-    width:              100%;
+    width: 100%;
     height:             $main-height;
-    margin-left:        0;
     padding-top:        $spacer-24;
     padding-right:      $spacer-24;
     padding-bottom:     $spacer-24;
     padding-left:       $spacer-24;
-    position:           absolute;
-    top:                0;
-    left:               $main-position-sidebar-close;
     overflow-y:         scroll;
     background-color:   $body-bg-secondary;
     transition:         transform 0.2s linear;
 
-    .show-sidebar & {
-        transform: translateX(270px);
-    }
-
-    @media (min-width: map-get($grid-breakpoints, lg)) {
-        margin-left: $main-margin-left;
-    }
 }

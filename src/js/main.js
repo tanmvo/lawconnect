@@ -6,10 +6,10 @@ var app = {
 	
 	// Sidebar
 	menuIcon: $('.menu-icon'),
-	appContainer: $('body'),
+	appContainer: $('.app'),
 	toggleSidebar: function() {
 		app.menuIcon.on('click', function() {
-			app.appContainer.toggleClass('show-sidebar');
+			app.appContainer.toggleClass('app--sidebar-open');
 		});
 	},
 	resetSidebar: function() {
@@ -17,7 +17,7 @@ var app = {
 		// Remove class to readjust components into its correct position  
 		$(window).resize(function() {
 			if ($(window).width() > 575) {
-				app.appContainer.removeClass('show-sidebar');
+				app.appContainer.removeClass('app--sidebar-open');
 			}
 		});
 	}
