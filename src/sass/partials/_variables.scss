@@ -18,7 +18,7 @@ $blue-100:      #E8F0FC !default;
 $blue-200:      #0E5FE3 !default;
 $purple:        #5D4ABD !default;
 
-$primary:       $blue-100 !default;
+$primary:       $blue-200 !default;
 $secondary:     $gray-500 !default;
 
 
@@ -28,7 +28,7 @@ $secondary:     $gray-500 !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer-none:   0 !default;
+$spacer-0:   0 !default;
 $spacer-8:      (1rem / 2) !default;
 $spacer-16:     1rem !default; 
 $spacer-24:     1.5rem !default;

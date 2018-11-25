@@ -1,12 +1,13 @@
 .logo {
-    width: $logo-width;
-    text-align: center;
+    width:              $logo-width;
+    margin-bottom:      $spacer-48;
+    text-align:         center;
 
     &__image {
-        width: $logo-width; 
-        max-width: $logo-max-width;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto; 
+        width:          $logo-width; 
+        max-width:      $logo-max-width;
+        height:         auto;
+        margin-left:    auto;
+        margin-right:   auto; 
     }
 }

@@ -15,9 +15,11 @@
 
     &__body {
         width: 100%;
+        margin-bottom: $spacer-40;
     }
 
     &__footer {
+        width: 100%;
         align-self: flex-end;
     }
 
