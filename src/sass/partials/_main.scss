@@ -10,6 +10,7 @@ $main-position-sidebar-open: $sidebar-width-sm;
     padding-bottom:     $spacer-24;
     padding-left:       $spacer-24;
     overflow-y:         scroll;
+    -webkit-overflow-scrolling: touch;
     background-color:   $body-bg-secondary;
     transition:         transform 0.2s linear;
 
