@@ -12,12 +12,25 @@
     @include no-margin;
 }
 
-.icon--feature,
+.icon--feature {
+    margin-left: $spacer-0;
+    margin-right: $spacer-16;
+    height: 2em;
+    width: 2em;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        margin-left: $spacer-24;
+        margin-right: ($spacer-16 * 2);
+        height: 3em;
+        width: 3em;
+    }
+}
+
 .icon--feature svg {
     flex: 0 0 32px;
     height: 2em;
     width: 2em;
-
+    
     @media (min-width: map-get($grid-breakpoints, lg)) {
         flex: 0 0 48px;
         height: 3em;

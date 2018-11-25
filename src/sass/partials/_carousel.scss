@@ -1,0 +1,32 @@
+.carousel {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top:     $spacer-16;
+    margin-right:   0;
+    margin-bottom:  0;
+    margin-left:    0;
+    padding-left:   0;
+    list-style-type: none;
+
+    &__item {
+        flex: 1 100%;
+        margin-right: $spacer-0;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        margin-top: $spacer-24;
+
+        &__item {
+            flex: 1 33%;
+            margin-right: $spacer-24;
+        }
+
+        &__item--no-spacer {
+            flex: 1 33%;
+            margin-right: $spacer-0;
+        }
+    }
+}

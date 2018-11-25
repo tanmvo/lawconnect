@@ -1,4 +1,5 @@
 .section {
+    margin-bottom: $spacer-16;
     padding-right: $spacer-16;
     padding-left: $spacer-16;
     
@@ -14,6 +15,7 @@
     }
 
     @media (min-width: map-get($grid-breakpoints, lg)) {
+        margin-bottom: $spacer-24;
         padding-right: $spacer-24;
         padding-left: $spacer-24;
     }
