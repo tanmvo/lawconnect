@@ -313,7 +313,10 @@ template {
   align-items: flex-start;
   height: 100vh;
   position: absolute;
-  left: -270px; }
+  left: -270px;
+  transition: left .2s ease-in-out; }
+  .app--sidebar-open {
+    left: 0; }
   @media (min-width: 576px) {
     .app {
       position: relative;
