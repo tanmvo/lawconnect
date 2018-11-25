@@ -1,10 +1,12 @@
 var app = {
 	init: function() {
-		app.toggleSidebar();
+		app.openSidebar();
+		app.closeSidebar();
 		app.resetSidebar();
 	},
 	
-	menuIcon: $('.sidebar-toggle'),
+	menuIcon: $('.icon-menu'),
+	closeIcon: $('.icon-close'),
 	appContainer: $('.app'),
 	body: $('body'),
 	mask: $('.mask'),
@@ -12,9 +14,19 @@ var app = {
 
 	// Sidebar
 	
-	toggleSidebar: function() {
+	openSidebar: function() {
 		app.menuIcon.on('click', function() {
 			app.appContainer.toggleClass('app--sidebar-open');
+			app.menuIcon.toggleClass('hidden');
+			app.body.toggleClass('overflow-none');
+			app.main.toggleClass('overflow-none');
+			app.activateMask();
+		});
+	},
+	closeSidebar: function() {
+		app.closeIcon.on('click', function() {
+			app.appContainer.toggleClass('app--sidebar-open');
+			app.menuIcon.toggleClass('hidden');
 			app.body.toggleClass('overflow-none');
 			app.main.toggleClass('overflow-none');
 			app.activateMask();
