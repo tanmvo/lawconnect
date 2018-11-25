@@ -2,13 +2,13 @@
     width: $sidebar-width-sm;
     height: $sidebar-height;
     padding: $spacer-24;
-    background-color: $blue-200;
+    background-color: $body-bg-primary;
     position: fixed;
-    left: -270px;
+    left: -($sidebar-width-sm);
     transition: transform 0.2s linear;
     
     .show-sidebar & {
-        transform: translateX(270px);
+        transform: translateX($sidebar-width-sm);
     }
 
     @media (min-width: map-get($grid-breakpoints, lg)) {

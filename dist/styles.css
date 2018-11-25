@@ -312,7 +312,7 @@ template {
   width: 270px;
   height: 100vh;
   padding: 1.5rem;
-  background-color: #0E5FE3;
+  background-color: #fff;
   position: fixed;
   left: -270px;
   transition: transform 0.2s linear; }
@@ -332,7 +332,7 @@ template {
   left: 0px;
   overflow-y: scroll;
   transition: transform 0.2s linear;
-  background-color: #F5F6F7; }
+  background-color: #F5F5F5; }
   .show-sidebar .main {
     transform: translateX(270px); }
   @media (min-width: 576px) {
