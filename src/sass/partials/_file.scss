@@ -1,0 +1,70 @@
+.file {
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding-top: $spacer-16;
+    padding-bottom: $spacer-16;
+    border-bottom: 1px solid $border-color;
+
+    &__content {
+        display: flex;
+        align-content: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    &__description {
+        width: 100%;
+        margin-bottom: $spacer-8;
+    }
+
+    &__name {
+        display: block;
+        margin-bottom: $spacer-8;
+    }
+
+    &__changelog {
+        display: block;
+        font-size: $font-size-sm;
+        color: $gray-400;
+    }
+
+    &__actions {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    &__label {
+        display: inline-flex;
+        align-self: center;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        padding-top:        ($spacer-16 * 2);
+        padding-bottom:     ($spacer-16 * 2);
+
+        &__content {
+            flex-wrap: nowrap;
+        }
+
+        &__description {
+            width: 100%;
+            margin-bottom: $spacer-0;
+        }
+
+        &__name {
+            margin-bottom: $spacer-0;
+        }
+
+        &__actions {
+            justify-content: flex-end;
+        }
+
+        &__label {
+            margin-right: $spacer-16;
+        }
+    }
+}

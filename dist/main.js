@@ -17,7 +17,6 @@ var app = {
 	openSidebar: function() {
 		app.menuIcon.on('click', function() {
 			app.appContainer.toggleClass('app--sidebar-open');
-			app.menuIcon.toggleClass('hidden');
 			app.body.toggleClass('overflow-none');
 			app.main.toggleClass('overflow-none');
 			app.activateMask();
@@ -29,7 +28,7 @@ var app = {
 			app.menuIcon.toggleClass('hidden');
 			app.body.toggleClass('overflow-none');
 			app.main.toggleClass('overflow-none');
-			app.activateMask();
+			app.deactivateMask();
 		});
 	},
 	resetSidebar: function() {
@@ -45,9 +44,12 @@ var app = {
 	},
 	activateMask: function () {
 		app.mask.toggleClass('mask--active');
+		app.menuIcon.toggleClass('hidden');
 	},
 	deactivateMask: function () {
 		app.mask.removeClass('mask--active');
+		app.menuIcon.removeClass('hidden');
+		app.main.removeClass('overflow-none');
 	}
 }
 

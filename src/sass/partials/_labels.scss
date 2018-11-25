@@ -1,0 +1,12 @@
+.label {
+    padding-left: ($spacer-8 / 2);
+    padding-right: ($spacer-8 / 2);
+    font-size: $font-size-sm;
+    line-height: $line-height-base;
+    border-radius: $border-radius;
+}
+
+.label--default {
+    color: $white;
+    background-color: $purple;
+}
