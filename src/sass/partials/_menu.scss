@@ -20,15 +20,10 @@
         padding-top: $spacer-8;
         padding-right: $spacer-8;
         padding-bottom: $spacer-8;
-        padding-left: $spacer-8;
+        padding-left: $spacer-16;
         
         border-radius: $border-radius;
         text-decoration: none;
-
-        & .icon {
-            margin-left:       $spacer-8;
-            margin-right:      $spacer-16;
-        }
 
         & #icon-swatch #Rectangle {
             fill:               $secondary;
@@ -47,11 +42,6 @@
 
     &__menu-item--active {
         background-color: $blue-100;
-
-        & .icon {
-            margin-left:       $spacer-8;
-            margin-right:      $spacer-16;
-        }
 
         & #icon-swatch #Rectangle {
             fill: $primary;

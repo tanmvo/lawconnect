@@ -46,9 +46,9 @@ module.exports = function(grunt) {
 			img: {
 				expand: true,
 					cwd: 'src/img/',
-					src: ['*'],
+					src: ['**/*'],
 					dest: 'dist/images/',
-					flatten: true,
+					flatten: false,
 			}
 		},
 		sass: {

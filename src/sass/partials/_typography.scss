@@ -4,9 +4,12 @@ body {
     color:          $font-color;
 }
 
-h1 { 
+h1, 
+.h1 { 
     font-size: $h1-font-size;
     font-weight: normal; 
+    margin-top: $spacer-0;
+    margin-bottom: $spacer-0;
 }
 
 p { font-size: $font-size-base; }

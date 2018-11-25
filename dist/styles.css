@@ -311,14 +311,23 @@ template {
 .overflow-none {
   overflow: hidden !important; }
 
+.visible-sm {
+  display: block; }
+  @media (min-width: 576px) {
+    .visible-sm {
+      display: none !important; } }
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.5;
   color: #191919; }
 
-h1 {
+h1,
+.h1 {
   font-size: 1.25rem;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0; }
 
 p {
   font-size: 1rem; }
@@ -326,19 +335,19 @@ p {
 img {
   width: 100%; }
 
-/*SVG ICON SYSTEM*/
 .icon {
   display: inline-flex;
-  align-self: center; }
+  align-self: center;
+  margin-right: 1rem;
+  position: relative;
+  height: 1.5em;
+  width: 1.5em; }
 
-.icon svg, .icon img {
-  height: 1em;
-  width: 1em;
-  fill: currentColor; }
-
-.icon.baseline svg, .icon img {
-  top: .125em;
-  position: relative; }
+.icon--no-spacer {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
 
 .logo {
   width: 100%;
@@ -440,12 +449,9 @@ img {
     padding-top: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     border-radius: 0.25rem;
     text-decoration: none; }
-    .menu__menu-item .icon {
-      margin-left: 0.5rem;
-      margin-right: 1rem; }
     .menu__menu-item #icon-swatch #Rectangle {
       fill: #303030; }
   .menu__menu-item:hover, .menu__menu-item:active {
@@ -455,12 +461,29 @@ img {
     color: #191919; }
   .menu__menu-item--active {
     background-color: #E8F0FC; }
-    .menu__menu-item--active .icon {
-      margin-left: 0.5rem;
-      margin-right: 1rem; }
     .menu__menu-item--active #icon-swatch #Rectangle {
       fill: #0E5FE3; }
   .menu__menu-item--active:visited {
     color: #0E5FE3; }
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .page-header__container {
+    width: 100%;
+    display: flex;
+    align-items: center; }
+  .page-header__icon {
+    display: inline-flex;
+    align-self: center;
+    margin-right: 1rem; }
+    @media (min-width: 576px) {
+      .page-header__icon {
+        display: none; } }
+  .page-header__title {
+    display: inline-flex;
+    align-self: center;
+    line-height: 1; }
 
 /*# sourceMappingURL=styles.css.map */

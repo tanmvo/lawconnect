@@ -4,7 +4,7 @@ var app = {
 		app.resetSidebar();
 	},
 	
-	menuIcon: $('.menu-icon'),
+	menuIcon: $('.sidebar-toggle'),
 	appContainer: $('.app'),
 	body: $('body'),
 	mask: $('.mask'),

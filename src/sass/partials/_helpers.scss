@@ -2,3 +2,11 @@
 .overflow-none {
     overflow: hidden !important;
 }
+
+.visible-sm {
+    display: block;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        display: none !important;
+    }
+}

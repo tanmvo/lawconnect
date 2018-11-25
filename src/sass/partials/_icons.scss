@@ -1,0 +1,13 @@
+.icon {
+    display: inline-flex;
+    align-self: center;
+    margin-right: $spacer-16;
+    // top: .1em;
+    position: relative;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.icon--no-spacer {
+    @include no-margin;
+}
