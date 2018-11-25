@@ -308,32 +308,35 @@ template {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.app {
-  display: flex;
-  align-items: flex-start;
-  height: 100vh;
-  position: absolute;
-  left: -270px;
-  transition: left .2s ease-in-out; }
-  .app--sidebar-open {
-    left: 0; }
-  @media (min-width: 576px) {
-    .app {
-      position: relative;
-      left: 0px; } }
-
 .sidebar {
-  flex: 0 0 270px;
-  height: 100%;
+  width: 270px;
+  height: 100vh;
   padding: 1.5rem;
-  background-color: #0E5FE3; }
+  background-color: #0E5FE3;
+  position: fixed;
+  left: -270px;
+  transition: transform 0.2s linear; }
+  .show-sidebar .sidebar {
+    transform: translateX(270px); }
   @media (min-width: 576px) {
     .sidebar {
-      flex: 0 0 240px; } }
+      width: 240px;
+      left: 0; } }
 
 .main {
   height: 100%;
+  margin-left: 0;
   padding: 1.5rem;
-  overflow-y: scroll; }
+  position: absolute;
+  top: 0;
+  left: 0px;
+  overflow-y: scroll;
+  transition: transform 0.2s linear;
+  background-color: #F5F6F7; }
+  .show-sidebar .main {
+    transform: translateX(270px); }
+  @media (min-width: 576px) {
+    .main {
+      margin-left: 240px; } }
 
 /*# sourceMappingURL=styles.css.map */

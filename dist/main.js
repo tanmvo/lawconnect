@@ -2,13 +2,13 @@ var app = {
 	init: function() {
 		app.toggleSidebar();
 	},
-
+	
 	// Sidebar
 	menuIcon: $('.menu-icon'),
-	appContainer: $('.app'),
+	appContainer: $('body'),
 	toggleSidebar: function() {
 		app.menuIcon.on('click', function() {
-			app.appContainer.toggleClass('app--sidebar-open');
+			app.appContainer.toggleClass('show-sidebar');
 		});
 	}
 }

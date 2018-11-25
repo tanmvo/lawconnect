@@ -1,5 +1,23 @@
+$main-margin-left: $sidebar-width-lg;
+$main-position-sidebar-close: 0px;
+$main-position-sidebar-open: $sidebar-width-sm;
+
 .main {
     height:     $main-height;
-    padding:    $spacer-24;
+    margin-left: 0;
+    padding: $spacer-24;
+    position: absolute;
+    top: 0;
+    left: $main-position-sidebar-close;
     overflow-y: scroll;
+    transition: transform 0.2s linear;
+    background-color: $body-bg-secondary;
+
+    .show-sidebar & {
+        transform: translateX(270px);
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        margin-left: $main-margin-left;
+    }
 }
