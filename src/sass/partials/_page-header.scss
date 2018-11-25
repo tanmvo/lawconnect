@@ -2,11 +2,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: $spacer-16;
+    padding-right: $spacer-16;
+    padding-bottom: $spacer-16;
+    padding-left: $spacer-16;
+    background-color: $body-bg-primary;
 
     &__container {
         width: 100%;
         display: flex;
         align-items: center;
+        
+        &--primary {
+            justify-content: flex-start;
+        }
+
+        &--secondary {
+            justify-content: flex-end;
+        }
     }
 
     &__icon {
@@ -21,5 +34,13 @@
         display: inline-flex;
         align-self: center;
         line-height: 1;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        padding-top: $spacer-40;
+        padding-right: $spacer-24;
+        padding-bottom: $spacer-40;
+        padding-left: $spacer-24;
+        background-color: transparent;
     }
 }

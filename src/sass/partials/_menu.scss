@@ -16,7 +16,9 @@
     }
 
     &__menu-item {
-        display: block;
+        width: 100%;
+        display: inline-flex;
+        align-self: center;
         padding-top: $spacer-8;
         padding-right: $spacer-8;
         padding-bottom: $spacer-8;
@@ -26,7 +28,7 @@
         text-decoration: none;
 
         & #icon-swatch #Rectangle {
-            fill:               $secondary;
+            fill: $gray-400;
         }
     }
 
