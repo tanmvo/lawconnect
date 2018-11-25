@@ -2,7 +2,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
     margin-top:     $spacer-16;
     margin-right:   0;
@@ -12,7 +12,6 @@
     list-style-type: none;
 
     &__item {
-        flex: 1 100%;
         margin-right: $spacer-0;
     }
 
@@ -20,12 +19,11 @@
         margin-top: $spacer-24;
 
         &__item {
-            flex: 1 33%;
+            max-width: 33%;
             margin-right: $spacer-24;
         }
 
-        &__item--no-spacer {
-            flex: 1 33%;
+        &__item:last-child {
             margin-right: $spacer-0;
         }
     }
