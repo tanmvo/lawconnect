@@ -1,6 +1,15 @@
 // BEM Naming Convention
 // Component code structure
-// CSS Style Guide by AirBnB
+
+// Resets
 
 @import 'partials/normalize';
+@import 'partials/reset';
 @import 'partials/variables';
+
+// Components
+
+@import 'partials/grid';
+@import 'partials/app';
+@import 'partials/sidebar';
+@import 'partials/main';

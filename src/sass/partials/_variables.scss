@@ -70,11 +70,8 @@ $grid-breakpoints: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $grid-breakpoints: map-merge(
   (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px
+    sm: 0,
+    lg: 576px,
   ),
   $grid-breakpoints
 );
@@ -108,7 +105,6 @@ $font-color:                  $black !default;
 $font-color-muted:            $gray-400 !default;
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                ($font-size-base * 1.25) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
 
 $font-weight-normal:          400 !default;
@@ -132,6 +128,27 @@ $headings-color:              inherit !default;
 $hr-border-color:             $gray-200 !default;
 $hr-border-width:             $border-width !default;
 
+
+// Sidebar
+
+$sidebar-width-sm:      270px !default;
+$sidebar-width-lg:      240px !default;
+
+$sidebar-flex-sm:       0 0 $sidebar-width-sm !default;
+$sidebar-flex-lg:       0 0 $sidebar-width-lg !default;
+
+$sidebar-height:        100% !default;
+
+
+// App
+
+$app-height: 100vh;
+$app-position-x: ($sidebar-width-sm * -1);
+
+
+// Main
+
+$main-height: 100% !default;
 
 // Buttons
 //

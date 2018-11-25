@@ -303,4 +303,34 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.app {
+  display: flex;
+  align-items: flex-start;
+  height: 100vh;
+  position: absolute;
+  left: -270px; }
+  @media (min-width: 576px) {
+    .app {
+      position: relative;
+      left: 0px; } }
+
+.sidebar {
+  flex: 0 0 270px;
+  height: 100%;
+  padding: 1.5rem;
+  background-color: #0E5FE3; }
+  @media (min-width: 576px) {
+    .sidebar {
+      flex: 0 0 240px; } }
+
+.main {
+  height: 100%;
+  padding: 1.5rem;
+  overflow-y: scroll; }
+
 /*# sourceMappingURL=styles.css.map */

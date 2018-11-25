@@ -1,0 +1,12 @@
+.app {
+    display: flex;
+    align-items: flex-start;
+    height: $app-height;
+    position: absolute;
+    left: $app-position-x;
+
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        position: relative;
+        left: 0px;
+    }
+}

@@ -1,0 +1,11 @@
+.sidebar {
+    flex: $sidebar-flex-sm;
+    height: $sidebar-height;
+    padding: $spacer-24;
+    background-color: $blue-200;
+    
+    @media (min-width: map-get($grid-breakpoints, lg)) {
+        flex: $sidebar-flex-lg;
+    }
+}
+
