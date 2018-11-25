@@ -8,6 +8,7 @@
     border-radius:  $border-radius;
     font-size:      $font-size-sm;
     line-height:    $line-height-sm;
+    cursor:         pointer;
 
     &--primary {
         border-color:       $primary;

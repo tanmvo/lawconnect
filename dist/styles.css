@@ -420,7 +420,8 @@ img {
   border: 1px solid #D2D5D9;
   border-radius: 0.25rem;
   font-size: 0.875rem;
-  line-height: 1.15; }
+  line-height: 1.15;
+  cursor: pointer; }
   .btn--primary {
     border-color: #0E5FE3;
     background-color: #0E5FE3;
@@ -679,6 +680,31 @@ img {
         margin-right: 1.5rem; }
       .carousel__item:last-child {
         margin-right: 0; } }
+
+.carousel-controller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none; }
+  .carousel-controller__item {
+    display: inline-flex;
+    margin-right: 1rem; }
+  .carousel-controller__indicator {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #D2D5D9;
+    border-radius: 0.25rem; }
+    .carousel-controller__indicator--active {
+      background-color: #0E5FE3; }
+  @media (min-width: 576px) {
+    .carousel-controller {
+      display: none; } }
 
 .card {
   display: flex;
