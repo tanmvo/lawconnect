@@ -308,6 +308,9 @@ template {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.overflow-none {
+  overflow: hidden; }
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.5;
@@ -319,6 +322,19 @@ h1 {
 
 p {
   font-size: 1rem; }
+
+img {
+  width: 100%; }
+
+.logo {
+  width: 100%;
+  text-align: center; }
+  .logo__image {
+    width: 100%;
+    max-width: 11.25rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; }
 
 .app {
   height: 100vh;
@@ -333,15 +349,23 @@ p {
       left: 0; } }
 
 .sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex: 0 0 270px;
   height: 100vh;
   padding-top: 1.5rem;
-  padding-right: 1.5rem;
+  padding-right: 1rem;
   padding-bottom: 1.5rem;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   background-color: #fff;
   left: -270px;
   transition: transform 0.2s linear; }
+  .sidebar__body {
+    width: 100%; }
+  .sidebar__footer {
+    align-self: flex-end; }
   @media (min-width: 576px) {
     .sidebar {
       flex: 0 0 240px; } }

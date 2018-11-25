@@ -6,10 +6,13 @@
 @import 'partials/normalize';
 @import 'partials/reset';
 @import 'partials/variables';
+@import 'partials/helpers';
 
 // Components
 
 @import 'partials/typography';
+@import 'partials/image';
+@import 'partials/logo';
 @import 'partials/grid';
 @import 'partials/app';
 @import 'partials/sidebar';

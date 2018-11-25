@@ -1,13 +1,25 @@
 .sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex: $sidebar-flex-sm;
     height: $sidebar-height;
     padding-top:        $spacer-24;
-    padding-right:      $spacer-24;
+    padding-right:      $spacer-16;
     padding-bottom:     $spacer-24;
-    padding-left:       $spacer-24;
+    padding-left:       $spacer-16;
     background-color: $body-bg-primary;
     left: -($sidebar-width-sm);
     transition: transform 0.2s linear;
+
+    &__body {
+        width: 100%;
+    }
+
+    &__footer {
+        align-self: flex-end;
+    }
 
     @media (min-width: map-get($grid-breakpoints, lg)) {
         flex: $sidebar-flex-lg;
