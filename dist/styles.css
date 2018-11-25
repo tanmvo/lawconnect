@@ -438,7 +438,8 @@ img {
   padding-right: 0.25rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+  margin-right: 0.5rem; }
 
 .label--default {
   color: #fff;
@@ -595,7 +596,8 @@ img {
     border-bottom: 1px solid #D2D5D9; }
   .section__title {
     font-size: 0.875rem;
-    line-height: 1.5; }
+    line-height: 1.5;
+    color: #6D7278; }
   @media (min-width: 576px) {
     .section {
       margin-bottom: 1.5rem;

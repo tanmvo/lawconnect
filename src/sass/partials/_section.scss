@@ -12,6 +12,7 @@
     &__title {
         font-size:      $font-size-sm;
         line-height:    $line-height-base;
+        color:          $font-color-muted;
     }
 
     @media (min-width: map-get($grid-breakpoints, lg)) {
