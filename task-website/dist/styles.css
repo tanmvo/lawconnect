@@ -309,6 +309,7 @@ template {
   box-sizing: border-box; }
 
 .overflow-none {
+  position: fixed;
   overflow: hidden !important; }
 
 .visible-sm {
@@ -492,6 +493,8 @@ img {
   background-color: #F5F5F5;
   transition: transform 0.2s linear;
   position: relative; }
+  .app--sidebar-open .main {
+    width: 400px; }
 
 .mask {
   display: none;

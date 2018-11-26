@@ -1,5 +1,7 @@
 // Prevent users from scrolling
 .overflow-none {
+    // position fixed to allow overflow hidden on iOS devices
+    position: fixed;
     overflow: hidden !important;
 }
 

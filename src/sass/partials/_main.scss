@@ -10,4 +10,9 @@ $main-position-sidebar-open: $sidebar-width-sm;
     background-color:   $body-bg-secondary;
     transition:         transform 0.2s linear;
     position: relative;
+
+    .app--sidebar-open & {
+        // static width to retain container shape when sidebar open
+        width: 400px;
+    }
 }

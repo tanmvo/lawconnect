@@ -31,7 +31,7 @@ module.exports = function(grunt) {
 				livereload: 35729,
 				hostname: 'localhost',
 				open: {appName: 'Google Chrome'},
-				base: ['dist/']
+				base: ['task-website/dist/']
 			},
 			livereload: true,
 		},
